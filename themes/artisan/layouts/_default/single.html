@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<!-- Card of post -->
+<div class="mdl-card mdl-shadow--3dp content-card">
+  <div class="mdl-card__title">
+    <h2>{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h2>
+    <h6>{{ .Date.Format "Jan 2, 2006" }}</h6>
+    <hr>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <article>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ if .Next }}
+<p class="hidden" id="next-article">{{ .Next.Permalink }}</p>
+{{ end }}
+{{ if .Prev }}
+<p class="hidden" id="prev-article">{{ .Prev.Permalink }}</p>
+{{ end }}
+{{ partial "footer.html" . }}

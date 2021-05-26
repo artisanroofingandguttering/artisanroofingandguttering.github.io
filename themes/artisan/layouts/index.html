@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+<div class="mdl-card mdl-shadow--3dp content-card job-card">
+  <div class="mdl-card__title" style="background: url('/img/40_year_timberline.jpg') center / cover;">
+  </div>
+  <div class="mdl-card__supporting-text no-active">
+    <h2 class="mdl-card__title-text title">Artisan Roofing and Guttering</h2>
+    <h5 class="mdl-card__title-text subtitle">Serving Kansas City and surrounding areas</h5>
+    <p>We are a locally owned and operated roofing and guttering company. We specialize in all types of roofing, gutters, and covers. We also work with windows, soffit, fascia, and much more. We service the entire greater Kansas City metro area.</p>
+    <p>Artisan takes pride in its quality of workmanship and guarantee you the best work. Our ratings on Home Advisor and the Better Business Bureau have reflected our attention to detail for years.</p>
+    <p>If you need any exterior work, would like a free estimate, or just have a question please let us know. Your business is important to us.</p>
+  </div>
+</div>
+{{ $paginator := .Paginate (where .Site.Pages "Params.frontpage" true) }}
+{{ range $paginator.Pages }}
+{{ if in (slice "promotion" "story") .Section }}
+<!-- promotion or story -->
+<div class="mdl-card mdl-shadow--3dp content-card">
+  <div class="mdl-card__title">
+    <h3>{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h3>
+    <hr>
+  </div>
+  <div class="mdl-card__supporting-text no-active">
+    <p>{{ .Summary }}</p>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button read-more mdl-js-button mdl-js-ripple-effect" href="{{ .Permalink }}">Read More <i class="fa fa-chevron-right"></i></a>
+  </div>
+</div>
+{{ end }}
+{{ if eq .Section "job"}}
+<!-- job -->
+<div class="mdl-card mdl-shadow--3dp content-card job-card">
+  <div class="mdl-card__title" style="background: url('{{ .Params.jobmainimg.url }}') center / cover;">
+  </div>
+  <div class="mdl-card__supporting-text no-active">
+    <h2 class="mdl-card__title-text title">{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h2>
+    <h5 class="mdl-card__title-text subtitle">{{ .Params.jobmainimg.text }}</h5>
+    <p>{{ .Summary }}</p>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button read-more mdl-js-button mdl-js-ripple-effect" href="{{ .Permalink }}">Job Details <i class="fa fa-chevron-right"></i></a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+{{ partial "paginate.html" . }}
+{{ partial "footer.html" . }}

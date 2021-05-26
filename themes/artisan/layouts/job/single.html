@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+<!-- Card of post -->
+<div class="mdl-card mdl-shadow--3dp content-card job-card">
+  <div class="mdl-card__title" style="background: url('{{ .Params.jobmainimg.url }}') center / cover;">
+  </div>
+  <div class="mdl-card__supporting-text no-active">
+    <h2 class="mdl-card__title-text title">{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h2>
+    <h5 class="mdl-card__title-text subtitle">{{ .Params.jobmainimg.text }}</h5>
+    <article>
+      <p class="mdl-card__subtitle-text">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </p>
+      <br><br>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ if .Next }}
+<p class="hidden" id="next-article">{{ .Next.Permalink }}</p>
+{{ end }}
+{{ if .Prev }}
+<p class="hidden" id="prev-article">{{ .Prev.Permalink }}</p>
+{{ end }}
+{{ partial "footer.html" . }}

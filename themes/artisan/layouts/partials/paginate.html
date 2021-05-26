@@ -1,0 +1,12 @@
+{{ if .Paginator.HasPrev }}
+<button class="mdl-button mdl-js-button mdl-button--icon">
+  <a href="{{ .Paginator.Prev.URL }}"><i class="material-icons">chevron_left</i></a>
+</button>
+<p class="hidden" id="prev-article">{{ .Paginator.Prev.URL }}</p>
+{{ end }}
+{{ if .Paginator.HasNext }}
+<button class="mdl-button mdl-js-button mdl-button--icon" style="float: right;">
+  <a href="{{ .Paginator.Next.URL }}"><i class="material-icons">chevron_right</i></a>
+</button>
+<p class="hidden" id="next-article">{{ .Paginator.Next.URL }}</p>
+{{ end }}
