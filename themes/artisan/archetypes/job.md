@@ -1,17 +1,15 @@
 ---
+frontPage: false
+title: ""
+description: ""
+date: "2016-12-08"
 categories:
   - "job"
   - "story"
-date: "2016-12-08"
-description: ""
-frontPage: false
-jobImgs:
+imgs:
   - url: ""
     text: ""
-jobMainImg:
+mainImg:
   url: ""
   text: ""
-tags:
-  - "roofing"
-title: ""
 ---

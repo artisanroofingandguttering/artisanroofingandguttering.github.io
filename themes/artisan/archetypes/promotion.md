@@ -1,12 +1,10 @@
 ---
-categories:
-  - "promotion"
-date: "2016-12-08"
-description: ""
 frontPage: false
+title: ""
+description: ""
+date: "2016-12-08"
 publishdate: ""
 expirydate: ""
-tags:
+categories:
   - "promotion"
-title: ""
 ---
