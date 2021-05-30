@@ -1,7 +1,11 @@
 ---
+title: "Artisan Roofing and Guttering"
 baseURL: "http://www.artisanroofingandguttering.com"
+theme: "artisan"
 languageCode: "en-us"
 metaDataFormat: "yaml"
-theme: "artisan"
-title: "Artisan Roofing and Guttering"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 ...
