@@ -1,21 +1,18 @@
 ---
+frontPage: true
+title: "Upgrade from 2x3 and Spikes"
+description: "Gutter upgrade from 2x3 with spikes."
+date: 2016-12-08T00:00:00Z
 categories:
 - job
-- story
-date: 2016-12-08T00:00:00Z
-description: "Gutter upgrade from 2x3 with spikes."
-frontPage: true
-jobImgs:
-- text: ""
-  url: "/img/job/Gutter_Upgrade_from_2x3_and_Spikes_1.jpg"
-- text: ""
-  url: "/img/job/Gutter_Upgrade_from_2x3_and_Spikes_2.jpg"
-jobMainImg:
+imgs:
+  - text: ""
+    url: "/img/job/Gutter_Upgrade_from_2x3_and_Spikes_1.jpg"
+  - text: ""
+    url: "/img/job/Gutter_Upgrade_from_2x3_and_Spikes_2.jpg"
+mainImg:
   text: "The finished miters and downspouts don't just look better, they perform better."
   url: "/img/job/Gutter_Upgrade_from_2x3_and_Spikes_16.jpg"
-tags:
-- roofing
-title: "Upgrade from 2x3 and Spikes"
 ---
 
 Here, we replace older gutters attached with spikes with aluminum seamless gutters using hangers. We move from 2x3 in downspouts to 3x4 in downspouts which doubles the water flow.

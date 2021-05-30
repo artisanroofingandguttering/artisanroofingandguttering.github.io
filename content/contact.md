@@ -1,12 +1,10 @@
 ---
+frontPage: false
+title: "Contact Us"
+description: "Information about contacting us"
+date: 2016-12-08T00:00:00Z
 categories:
 - page
-date: 2016-12-08T00:00:00Z
-description: "Information about contacting us"
-frontPage: false
-tags:
-- story
-title: "Contact Us"
 ---
 
 Contact us anytime. We'd love to provide you with a free estimate, and we stand by our quality craftsmanship.

@@ -1,13 +1,11 @@
 ---
+frontPage: true
+title: "Winter Shingle Sale"
+description: ""
+date: 2016-12-08T00:00:00Z
+expiryDate: 1901-01-08T00:00:00Z
 categories:
 - promotion
-date: 2016-12-08T00:00:00Z
-description: ""
-expiryDate: 2017-01-08T00:00:00Z
-frontPage: true
-tags:
-- promotion
-title: "Winter Shingle Sale"
 ---
 
 We're currently running a special, 25% off, on all shingles through the end of November.
