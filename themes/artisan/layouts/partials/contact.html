@@ -1,28 +1,31 @@
-<h3>Contact Us</h3>
-<form id="contact-form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" pattern="^\w([\w .]*[\w.])?$" id="name">
-    <label class="mdl-textfield__label" for="name">Name...</label>
-    <span class="mdl-textfield__error">name required</span>
-  </div>
-  <br>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" pattern="^([+]?\d{1,2}[-\s]?|)\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}$" id="phone">
-    <label class="mdl-textfield__label" for="phone">Phone Number...</label>
-    <span class="mdl-textfield__error">must be phone number</span>
-  </div>
-  <br>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" pattern="^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$" id="email">
-    <label class="mdl-textfield__label" for="email">* Email Address...</label>
-    <span class="mdl-textfield__error">must be valid email</span>
-  </div>
-  <br>
-  <div class="mdl-textfield mdl-js-textfield full-width">
-    <textarea class="mdl-textfield__input" type="text" rows="8" id="msg"></textarea>
-    <label class="mdl-textfield__label" for="msg">* Your Message...</label>
-  </div>
-  <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
-    <i class="fa fa-envelope"></i> SEND
-  </button>
-</form>
+<div class="mdl-cell mdl-cell--12-col">
+  <hr>
+  <h3>Contact Us</h3>
+  <form id="contact-form">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" pattern="^\w([\w .]*[\w.])?$" id="name">
+      <label class="mdl-textfield__label" for="name">Name...</label>
+      <span class="mdl-textfield__error">name required</span>
+    </div>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" pattern="^([+]?\d{1,2}[-\s]?|)\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}$" id="phone">
+      <label class="mdl-textfield__label" for="phone">Phone Number...</label>
+      <span class="mdl-textfield__error">must be phone number</span>
+    </div>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" pattern="^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$" id="email">
+      <label class="mdl-textfield__label" for="email">* Email Address...</label>
+      <span class="mdl-textfield__error">must be valid email</span>
+    </div>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield full-width">
+      <textarea class="mdl-textfield__input" type="text" rows="8" id="msg"></textarea>
+      <label class="mdl-textfield__label" for="msg">* Your Message...</label>
+    </div>
+    <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+      <i class="fa fa-envelope"></i> SEND
+    </button>
+  </form>
+</div>

@@ -1,5 +1,21 @@
-{{ partial "header.html" . }}
-<!-- Card of post -->
+{{ define "main" }}
+{{ if isset .Params "mainimg" }}
+<div class="mdl-card mdl-shadow--3dp content-card img-card">
+  <div class="mdl-card__title" style="background: url('{{ .Params.mainimg.url }}') center / cover;">
+  </div>
+  <div class="mdl-card__supporting-text no-active">
+    <h2 class="mdl-card__title-text title">{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h2>
+    <h5 class="mdl-card__title-text subtitle">{{ .Params.mainimg.text }}</h5>
+    <article>
+      <p class="mdl-card__subtitle-text">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </p>
+      <br><br>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ else }}
 <div class="mdl-card mdl-shadow--3dp content-card">
   <div class="mdl-card__title">
     <h2>{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h2>
@@ -12,10 +28,11 @@
     </article>
   </div>
 </div>
+{{ end }}
 {{ if .Next }}
 <p class="hidden" id="next-article">{{ .Next.Permalink }}</p>
 {{ end }}
 {{ if .Prev }}
 <p class="hidden" id="prev-article">{{ .Prev.Permalink }}</p>
 {{ end }}
-{{ partial "footer.html" . }}
+{{ end }}

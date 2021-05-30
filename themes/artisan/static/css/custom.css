@@ -89,7 +89,7 @@
     color: rgba(0,0,0,.54);
 }
 
-.job-card > .mdl-card__title {
+.img-card > .mdl-card__title {
     color: #fff;
     height: 400px;
     min-height: 80px;
