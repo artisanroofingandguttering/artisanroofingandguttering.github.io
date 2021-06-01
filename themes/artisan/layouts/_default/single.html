@@ -9,9 +9,6 @@
     {{ if isset .Params.mainImg "text" }}<h5 class="mdl-card__title-text subtitle">{{ .Params.mainimg.text }}</h5>{{ end }}
     <p>{{ .Summary }}</p>
   </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button read-more mdl-js-button mdl-js-ripple-effect" href="{{ .Permalink }}">More <i class="fa fa-chevron-right"></i></a>
-  </div>
 </div>
 {{ else }}
 <div class="mdl-card mdl-shadow--3dp content-card">
@@ -21,9 +18,6 @@
   </div>
   <div class="mdl-card__supporting-text no-active">
     <p>{{ .Summary }}</p>
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button read-more mdl-js-button mdl-js-ripple-effect" href="{{ .Permalink }}">Read More <i class="fa fa-chevron-right"></i></a>
   </div>
 </div>
 {{ end }}
