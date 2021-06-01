@@ -5,6 +5,7 @@ description: "About Artisan Roofing and Guttering"
 date: 2016-12-08T00:00:00Z
 mainImg:
   url: "/img/img31.png"
+url: /about/
 ---
 
 Artisan Roofing and Guttering, was founded on the belief of hard work and craftsmanship. For 20 years now we have provided the Kansas City metro and surrounding areas with high quality, professional service at a competitive rate.
