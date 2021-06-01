@@ -5,6 +5,8 @@ Currently there are two websites presented at https://artisanroofingandguttering
 + https://artisanroofingandguttering.gitlab.io/ - The main hugo site.
 + https://artisanroofingandguttering.gitlab.io/bootstrap/ - The new bootstrap site.
 
+_UPDATE 2021-06-01: I have updated the about data, added team members, and added reviews to the hugo site._ I am not yet rendering the reviews and team members, but I'll add that to the template, maybe tomorrow.
+
 ## hosting
 
 Hosting for http://artisanroofingandguttering.com is currently done via AWS S3 Public Bucket. To continue hosting like this would require a higher investment and more work to host the site via TLS, as it should be. Notice, right now your website is "http" not "https"; that is no good these days.
