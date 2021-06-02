@@ -70,7 +70,7 @@ Here is an abbreviated list of modification I made to the provided files prior t
     - This is the standard and anybody working on code in Windows should configure LF endings.
     - Repository provides [EditorConfig](https://editorconfig.org).
 + Reformatted many files for legibility.
-+ Modified the DOM structure for all html files; non passed validation.
++ Modified the DOM structure for all html files; none passed validation.
 + Removed many instances of `&nbsp;` used for formatting.
 + Corrected that formatting with css.
 
