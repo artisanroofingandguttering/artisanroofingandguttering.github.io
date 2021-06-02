@@ -7,7 +7,7 @@
   <div class="mdl-card__supporting-text no-active">
     <h2 class="mdl-card__title-text title">{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h2>
     {{ if isset .Params.mainImg "text" }}<h5 class="mdl-card__title-text subtitle">{{ .Params.mainimg.text }}</h5>{{ end }}
-    <p>{{ .Summary }}</p>
+    {{ .Content }}
   </div>
 </div>
 {{ else }}
@@ -17,7 +17,7 @@
     <hr>
   </div>
   <div class="mdl-card__supporting-text no-active">
-    <p>{{ .Summary }}</p>
+    {{ .Content }}
   </div>
 </div>
 {{ end }}
