@@ -43,5 +43,30 @@
 {{ end }}
 {{ end }}
 {{ end }}
-{{ partial "paginate.html" . }}
+
+{{ $frontpage := where .Site.Pages "Params.frontpage" true }}
+{{ $reviews := where .Site.Pages "Section" "review" }}
+{{ $frontpageReviews := $frontpage | intersect $reviews }}
+{{ if ne (len $frontpageReviews) 0 }}
+<div class="mdl-card mdl-shadow--3dp content-card rating">
+  <div class="mdl-card__supporting-text no-active">
+    <h2 class="mdl-card__title-text title">What are people saying?</h2>
+{{ range first 2 $frontpageReviews }}
+{{ $rating := .Params.rating }}
+    <h4>{{ .Title }} {{ if .Draft }} :: DRAFT{{end}}</h4>
+    {{ range seq 5 }}
+    <span class="rating fa fa-star{{ if ge . (add (int $rating) 1) }}-o{{ end }}"></span>
+    {{ end }}
+    {{ .Content }}
+    {{ if isset .Params "response" }}
+    <p><strong>Response:</strong> {{ .Params.response.text }}</p>
+    {{ end }}
+{{ end }}
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button read-more mdl-js-button mdl-js-ripple-effect" href="/review/">All Reviews <i class="fa fa-chevron-right"></i></a>
+  </div>
+</div>
+{{ end }}
+
 {{ end }}
