@@ -114,3 +114,11 @@
 .mdl-mini-footer__social-btn > a > i {
     font-size: 1.6em;
 }
+
+.rating span.fa-star {
+    color: #fdcc0d;
+}
+
+.rating span.fa-star-o {
+    color: rgba(0,0,0,.21);
+}
