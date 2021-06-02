@@ -5,6 +5,19 @@ Currently there are two websites presented at https://artisanroofingandguttering
 + https://artisanroofingandguttering.gitlab.io/ - The main hugo site.
 + https://artisanroofingandguttering.gitlab.io/bootstrap/ - The new bootstrap site.
 
+_UPDATE 2021-06-02: Added many more updates._ Here are todays changes:
+
++ Fixed "qoute" misspellings.
++ Added stylelintrc
++ Published the first two reviews to illustrate the feature.
++ Added review feature to front page with first two, then read more to custom full reviews page.
+    - These are correctly linked to the source reviews.
+    - They use a custom js function to properly show the relative time ago.
+    - One only needs to set the `rating: n` and n stars will show.
++ Updated to the latest design cdn.
++ Improved the default list and single layouts to allow full markdown authoring.
++ Team members are added, but I haven't added the templates yet.
+
 _UPDATE 2021-06-01: I have updated the about data, added team members, and added reviews to the hugo site._ I am not yet rendering the reviews and team members, but I'll add that to the template, maybe tomorrow.
 
 ## hosting
