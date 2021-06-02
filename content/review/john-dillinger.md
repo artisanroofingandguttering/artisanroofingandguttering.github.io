@@ -1,5 +1,4 @@
 ---
-draft: true
 frontPage: true
 title: "Review by John Dillinger"
 description: "Google Review from our customer."
