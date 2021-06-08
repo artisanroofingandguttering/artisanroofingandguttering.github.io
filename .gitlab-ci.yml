@@ -1,11 +1,9 @@
-image: registry.gitlab.com/pages/hugo:latest
-
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
+image: alpine:latest
 
 pages:
+  stage: deploy
   script:
-  - hugo
+  - echo 'Nothing to do...'
   artifacts:
     paths:
     - public
