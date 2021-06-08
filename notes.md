@@ -44,6 +44,20 @@ Here is how the url's are laid out:
     - https://artisanroofingandguttering.com redirects to https://www.artisanroofingandguttering.com
     - http://www.artisanroofingandguttering.com redirects to https://www.artisanroofingandguttering.com
     - https://www.artisanroofingandguttering.com resolves and responds with the website
++ records
+    - `A` `@` 35.185.44.232
+    - `CNAME` `www` artisanroofingandguttering.gitlab.io.
+    - `TXT` x2 with domain verification
+    - `301` artisanroofingandguttering.com -> https://www.artisanroofingandguttering.com, nogo
++ status
+    - http://artisanguttering.com redirects
+    - https://artisanguttering.com nogo
+    - http://www.artisanguttering.com redirects
+    - https://www.artisanguttering.com nogo hangs
+    - http://artisanroofingandguttering.com redirects with 301, @ to https://artisanroofingandguttering.com
+    - https://artisanroofingandguttering.com redirects with 301, @ to https://artisanroofingandguttering.com
+    - http://www.artisanroofingandguttering.com redirects
+    - https://www.artisanroofingandguttering.com responds
 
 That means, in the new hosting environment, no matter which url is used, the user ends up at the secure version of the website including TLS and the canonical www subdomain.
 
