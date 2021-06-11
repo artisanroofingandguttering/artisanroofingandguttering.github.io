@@ -1,3 +1,3 @@
-# artisanroofingandguttering.gitlab.io
+# artisanroofingandguttering.github.io
 
-Hugo site for Artisan Roofing and Guttering
+Artisan Roofing and Guttering website.
