@@ -1129,6 +1129,13 @@ nav.main-menu {
 .padding_dd {padding: 0px 50px;}
 .carousel-control-next {display: none;}
 .carousel-control-prev {display: none;}
+/** big-num **/
+li.big-num {
+  color: #ffc107;
+  font-size: 1.8rem;
+  padding-left: 0.8rem;
+}
+/** end big-num **/
 /** about section **/
 .about {
   background-color: #fff;
